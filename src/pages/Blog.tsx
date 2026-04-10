@@ -15,6 +15,7 @@ const posts = [
       "Last week I was admitted into the Hoeft Technology and Management minor's 32nd cohort. Here's why this program means so much to me and what I'm excited to build over the next two years.",
     tag: "Education",
     image: hoeftTmBanner,
+    imageClassName: "object-contain bg-white",
   },
   {
     slug: "hackathon-season-2026",
@@ -24,6 +25,7 @@ const posts = [
       "Two months into 2026 and I'm so excited to already have two hackathon wins under my belt. Take a look at my projects CandiDate and Squishy!",
     tag: "Projects",
     image: candidateApp,
+    imageClassName: "object-cover",
   },
 ];
 
@@ -57,7 +59,11 @@ const Blog = () => {
                     whileHover={{ scale: 1.03 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className={`w-full h-full ${post.imageClassName ?? "object-cover"}`}
+                    />
                   </motion.div>
                   <span className="text-xs tracking-[0.15em] text-accent uppercase">{post.tag}</span>
                   <p className="text-sm text-muted-foreground mt-1">{post.date}</p>
