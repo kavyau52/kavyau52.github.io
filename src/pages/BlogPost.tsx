@@ -6,6 +6,7 @@ import candidateTeam from "@/assets/candidate-team.jpg";
 import candidateApp from "@/assets/candidate-app.jpg";
 import squishyTeam from "@/assets/squishy-team.jpg";
 import squishyLogo from "@/assets/squishy-logo.jpg";
+import hoeftTmBanner from "@/assets/hoeft-tm-banner.png";
 import { ReactNode } from "react";
 
 interface PostData {
@@ -16,6 +17,82 @@ interface PostData {
 }
 
 const postContent: Record<string, PostData> = {
+  "joining-uiuc-hoeft-tm-cohort-xxxii": {
+    title: "Joining UIUC's Hoeft Technology and Management Cohort XXXII",
+    date: "April 2026",
+    tag: "Education",
+    content: (
+      <>
+        <motion.div
+          className="rounded-sm overflow-hidden mb-8"
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.3 }}
+        >
+          <img
+            src={hoeftTmBanner}
+            alt="University of Illinois Hoeft Technology and Management Program banner"
+            className="w-full h-auto"
+          />
+        </motion.div>
+
+        <p className="text-muted-foreground leading-relaxed text-base">
+          I'm so excited to share that last week I was admitted into the Hoeft Technology and
+          Management (T&M) minor's 32nd cohort! This has been a program I've heard about from the
+          first day I stepped foot on this campus, attending the 2026 Women in Engineering
+          Orientation and listening to alum Isha Tyle speak about her experience creating projects,
+          networking, and just simply having fun in this program.
+        </p>
+
+        <p className="text-muted-foreground leading-relaxed text-base">
+          As both an aspiring consultant and AI researcher, the balance and intersection between
+          technology and business has always been important to me. I can't pinpoint a specific
+          "aha" moment that made me discover this passion, but I do know I can credit some of it
+          to my parents. Both engineering undergraduates who came to the USA to pursue MBAs, they
+          credit their success to this ability and have emphasized the value of thinking both
+          strategically and technically. I'm so excited to bolster that ability, not only through
+          T&M's course requirements in complementary fields, but also in project management-specific
+          TMGT classes. T&M graduates are actively growing their ways of thinking and analysis,
+          transforming both their professional and personal lives. Furthermore, every week when my
+          dad and I would watch the new Shark Tank episode, I'd watch increasingly more companies
+          integrate tech, allowing me to see the multidisciplinary world of technology and
+          management blossom. Each episode, I noticed that the successful entrepreneurs were those
+          who understood their business strategy from the inside out. However, engineers
+          consistently fail to communicate properly and fall short, leading me to value
+          communication. People with technical and business knowledge, such as tech strategy
+          consultants, are more useful than ever because technology is integrated with almost every
+          aspect of our lives. They provide clarity during a time when the future of technology is
+          uncertain, transforming them into truly valuable team members. I understand that T&M has
+          aligned itself with creating the next generation of this community, making me undoubtedly
+          sure that I'll emerge from this program an even better speaker, communicator, and
+          businesswoman.
+        </p>
+
+        <p className="text-muted-foreground leading-relaxed text-base">
+          More specifically, over the past semester, I have discovered my alignment with strategy
+          consulting. In the long term, I hope to be a management or strategy consultant or
+          business analyst, specializing in using my AI, quantum computing, and technological
+          knowledge, abilities, and passion to drive my decisions and thinking. With the rise of
+          generative AI, it has become even more necessary for consultants to develop high-agency
+          and high-value skills, a pillar of T&M. I'm currently enrolled in BADM-261, the T&M
+          seminar class, which has developed my project proposal, elevator pitch, and case
+          interview skills. I know I'll only develop a more strategic skillset over the next two
+          years, hopefully turning me into a unicorn in the competitive job market. Furthermore, as
+          I've connected with other tech leaders at UIUC, I have learned how the Hoeft T&M program
+          sets up engineers for success. T&M's opportunities and alumni network are key to making
+          it UIUC's most transformative minor. By providing its participants with resources to
+          participate in global pitch competitions and capstone projects, T&M will allow me to
+          network globally and forge connections with my cohort that will last a lifetime. With
+          T&M's study abroad programs, I know I'll gain a more global and well-rounded perspective
+          on business matters, immersing myself in new cultures and markets. Similarly, I have
+          always believed that working on capstone projects and connecting with alumni teach
+          resourcefulness and ambition, two of my most valued skills, and I honestly can't wait to
+          see how they grow over the next two years. Thank you so much to Dr. Geoffrey Love for
+          teaching BADM-261 and introducing me to T&M, and to the T&M selection committee for
+          seeing my potential to join this program, and I can't wait to see what happens next!
+        </p>
+      </>
+    ),
+  },
   "hackathon-season-2026": {
     title: "Hackathon Season 2026: CandiDate & Squishy",
     date: "March 2026",

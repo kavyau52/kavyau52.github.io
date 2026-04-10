@@ -4,8 +4,18 @@ import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import candidateApp from "@/assets/candidate-app.jpg";
 import squishyLogo from "@/assets/squishy-logo.jpg";
+import hoeftTmBanner from "@/assets/hoeft-tm-banner.png";
 
 const posts = [
+  {
+    slug: "joining-uiuc-hoeft-tm-cohort-xxxii",
+    date: "April 2026",
+    title: "Joining UIUC's Hoeft Technology and Management Cohort XXXII",
+    excerpt:
+      "Last week I was admitted into the Hoeft Technology and Management minor's 32nd cohort. Here's why this program means so much to me and what I'm excited to build over the next two years.",
+    tag: "Education",
+    image: hoeftTmBanner,
+  },
   {
     slug: "hackathon-season-2026",
     date: "March 2026",
