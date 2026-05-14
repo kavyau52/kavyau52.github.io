@@ -7,6 +7,7 @@ import candidateApp from "@/assets/candidate-app.jpg";
 import squishyTeam from "@/assets/squishy-team.jpg";
 import squishyLogo from "@/assets/squishy-logo.jpg";
 import hoeftTmBanner from "@/assets/hoeft-tm-banner.png";
+import responsibleAiConsulting from "@/assets/ethical-ai-consulting.jpg";
 import { ReactNode } from "react";
 
 interface PostData {
@@ -17,6 +18,104 @@ interface PostData {
 }
 
 const postContent: Record<string, PostData> = {
+  "insights-on-ethical-and-responsible-ai-usage-within-consulting": {
+    title: "Insights on Ethical and Responsible AI Usage Within Consulting",
+    date: "May 2026",
+    tag: "AI & Consulting",
+    content: (
+      <>
+        <motion.div
+          className="rounded-sm overflow-hidden mb-8"
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.3 }}
+        >
+          <img
+            src={responsibleAiConsulting}
+            alt="Responsible AI usage in consulting"
+            className="w-full h-auto"
+          />
+        </motion.div>
+
+        <p className="text-muted-foreground leading-relaxed text-base">
+          Over the past year, I’ve immersed myself in the field of consulting. I have interviewed for consulting internships, held leadership positions within student-run consulting firms, delivered recommendations in high stakes client engagements, and spent countless hours crafting PowerPoint presentations. Now, don’t get me wrong, I love this field. I love the time I spend whiteboarding and problem solving with my team, discussions I have with our clients, and grinding to learn about new fields (Hit me up if you ever need to know about the hospital procurement process!). The speed and importance of the work I’m doing give me an irreplaceable fulfillment and thrill.
+        </p>
+
+        <p className="text-muted-foreground leading-relaxed text-base">
+          However, those feelings don’t come with every aspect of the job, making it a top field for workers to embrace AI. Associates are now always told to problem solve and make slide designs with a generative AI, which has led AI to be a daily presence and driver behind many recent scandals in the consulting industry. This combination of time-consuming tasks that can be optimized by genAI and scattered AI training methodologies call for a structured responsible AI framework.
+        </p>
+
+        <p className="text-muted-foreground leading-relaxed text-base">
+          After spending classes learning from panelists and industry professionals on AI integration, I shifted my focus to looking through three widely adopted AI frameworks: IEEE’s Ethically Aligned Design (EAD1e), OECD AI Principles, and the EU AI Act.
+        </p>
+
+        <div className="space-y-4">
+          <div>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
+              IEEE's Ethically Aligned Design (EAD1e)
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-base">
+              An engineering-rooted framework built around seven general principles: human rights, well-being, data agency, effectiveness, transparency, accountability, and awareness of misuse. This AI is specifically interesting for product development and tech consultants, as it embeds ethics at the design stage rather than treating it as a compliance checkbox. The most operationally relevant principles are transparency and accountability, ensuring that AI decisions are well-backed and that any biases are detectable for minimal mistakes.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
+              The OECD AI Principles
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-base">
+              The Organization for Economic Co-operation and Development created this framework in 2019 and updated it in 2024 after the rise of genAIs like ChatGPT. This is the first intergovernmental AI standard, endorsed by 47 countries. They center on five values: inclusive growth and well-being, human-centred fairness, transparency and explainability, robustness and safety, and accountability. While this framework is tailored to policymakers and organizations rather than engineers, it still has validity for consultants working on international and large scale projects as this framework is a one-size-fits-all that prioritizes international cooperation. Through its flexible guidance that works across legal systems, it has become one of the most globally influential reference points for responsible AI governance.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
+              EU AI Act
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-base">
+              The European Union has gone a step farther. Rather than articulating and suggesting ethical principles, the EU AI Act is a completely binding law that classifies AIs by their risk level: unacceptable, high, limited, and minimal on the AI’s transparency, human oversight, and data protection. This way, the EU can add strict requirements to high risk systems and even ban certain AI systems completely. It is the first comprehensive AI law by a major global economy, and its risk-based classification structure has already influenced national AI strategies and regulatory frameworks beyond the European Union.
+            </p>
+          </div>
+        </div>
+
+        <div className="h-px w-full bg-border my-12" />
+
+        <div>
+          <p className="text-muted-foreground leading-relaxed text-base">
+            These analyses have led me to brainstorm the three most important pillars for consulting-specific initiatives: <strong>transparency, security, and intelligence</strong>.
+          </p>
+        </div>
+
+        <div className="space-y-6">
+          <div>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
+              Transparency
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-base">
+              Within transparency, accountability and accuracy are two of the most important qualities each AI should have, as you never want to give clients flawed or incorrect insights. All research must have valid, non AI-generated sources to minimize flawed or hallucinated data. In terms of AI models, they must be built to recheck outputs without human prompting, but consultants themselves should know to independently verify data, links, and statistics before any client-facing use. Most importantly, final conclusions and recommendations should never be AI-generated. Instead of treating AI as a taboo topic, we must instead teach that why it is a strong research and analysis tool, the consultant must own the judgement and decision-making.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
+              Security
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-base">
+              Security, covering data governance, data agency, and human oversight, protects both the client and the firm. This operates on two levels: consultant behavior, such as never inputting raw client data into consumer-facing AI tools, and firm-level tooling, meaning enterprise-grade AI platforms with enforceable data agreements and access controls. Human oversight ensures that no AI system is leaking data and that there is always a human-in-the-loop to be accountable for the AI to save a firm’s reputation if something does go wrong.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
+              Intelligence
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-base">
+              Intelligence reflects on both the AI’s and consultant’s capacity to improve. On the model side, rapid learning cycles should produce more consistent outputs over time, directly reducing bias as well. For consultants, AI is incredibly useful in compressing the learning curve on unfamiliar industries, enabling quicker engagements, and it’s imperative that consultants know how to properly leverage it, such as using AIs for pattern recognition and memory retention along with learning from it.
+            </p>
+          </div>
+        </div>
+      </>
+    ),
+  },
   "joining-uiuc-hoeft-tm-cohort-xxxii": {
     title: "Joining UIUC's Hoeft Technology and Management Cohort XXXII",
     date: "April 2026",

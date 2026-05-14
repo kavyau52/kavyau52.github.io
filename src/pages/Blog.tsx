@@ -5,8 +5,19 @@ import AnimatedSection from "@/components/AnimatedSection";
 import candidateApp from "@/assets/candidate-app.jpg";
 import squishyLogo from "@/assets/squishy-logo.jpg";
 import hoeftTmBanner from "@/assets/hoeft-tm-banner.png";
+import responsibleAiConsulting from "@/assets/ethical-ai-consulting.jpg";
 
 const posts = [
+  {
+    slug: "insights-on-ethical-and-responsible-ai-usage-within-consulting",
+    date: "May 2026",
+    title: "Insights on Ethical and Responsible AI Usage Within Consulting",
+    excerpt:
+      "Consulting is becoming inseparable from generative AI, and this blog explores why structured responsible AI frameworks are essential for consultants.",
+    tag: "AI & Consulting",
+    image: responsibleAiConsulting,
+    imageClassName: "object-cover",
+  },
   {
     slug: "joining-uiuc-hoeft-tm-cohort-xxxii",
     date: "April 2026",
