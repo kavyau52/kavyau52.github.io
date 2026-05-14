@@ -7,7 +7,7 @@ import candidateApp from "@/assets/candidate-app.jpg";
 import squishyTeam from "@/assets/squishy-team.jpg";
 import squishyLogo from "@/assets/squishy-logo.jpg";
 import hoeftTmBanner from "@/assets/hoeft-tm-banner.png";
-import responsibleAiConsulting from "@/assets/ethical-ai-consulting.jpg";
+import responsibleAiConsulting from "@/assets/Screenshot 2026-05-13 at 19.34.43.png";
 import { ReactNode } from "react";
 
 interface PostData {
